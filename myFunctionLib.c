@@ -5,7 +5,8 @@
 #include "myGfxShapesLib.h"
 #include "gfx2.h"
 
-void printListOfDoubles (double* listOfDoubles, int COUNT)
+
+void sortVisualize (double* listOfDoubles, int COUNT)
 {
     int i;
     for (i=0; i < COUNT; i++)  {
@@ -14,22 +15,26 @@ void printListOfDoubles (double* listOfDoubles, int COUNT)
 
 }//end printListOfDoubles
 
-void bubble_sort(long list[], long n)
+
+//BubbleSort Function********************************************
+void sortNumbers(double* listOfDoubles, int COUNT)
 {
-  long c, d, t;
- 
-  for (c = 0 ; c < n - 1; c++)
-  {
-    for (d = 0 ; d < n - c - 1; d++)
-    {
-      if (list[d] > list[d+1])
-      {
-        /* Swapping */
- 
-        t         = list[d];
-        list[d]   = list[d+1];
-        list[d+1] = t;
-      }
+    int i,j,num;
+    int temp=0;
+    
+    for (i=0; i < COUNT; i++)  {
+        num = rand() / (double) RAND_MAX * 200.0;
+        listOfDoubles[i] = num;
     }
-  }
-}
+    
+    for (i=0; i < COUNT; i++)  {
+        
+        for (j=0; j < COUNT - 1; j++)  {
+            if (listOfDoubles[j] > listOfDoubles[j+1])  {
+                temp=listOfDoubles[j];
+                listOfDoubles[j] = listOfDoubles[j+1];
+                listOfDoubles[j+1]=temp;
+            } //end if
+        }//end for    
+    }//end for
+}//end sortNumbers (bubble sort) function
