@@ -96,7 +96,7 @@ void drawBars( double * data, int dataCount, double lowerLeftX, double lowerLeft
     gfx_line(llx,lly,llx+width,lly); //draw bottom
     gfx_line(llx+width,lly,llx+width,lly-data[i]); //draw right side
     gfx_line(llx,lly-data[i],llx+width,lly-data[i]); //draw top
-    
+    usleep(100000);
     llx = llx + width + spacing;//update the x coord of lwr left corner for next time trough the loop
     }
         
