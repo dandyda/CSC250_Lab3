@@ -3,6 +3,10 @@
 
 
 
-void printListOfDoubles (double* listOfDoubles, int COUNT);
 
-void bubble_sort(long list[], long n);
+
+void sortVisualize(double* listOfDoubles, int COUNT);
+
+void sortNumbers(double* listOfDoubles, int COUNT);
+
+
