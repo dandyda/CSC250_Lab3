@@ -1,3 +1,10 @@
+/*****DINO DAN, CSC250-SP19
+******LAB 3, SORT RANDOM NUMBER BAR GRAPH
+******Major contribution by Noah Manter
+******3/13/2019, version 1.0*/
+
+
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
